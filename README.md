@@ -1,13 +1,24 @@
-# MegaETHContrib (Testnet)
+# 🚀 MegaETH Contrib – Testnet dApp
 
-✅ Contract deployed on **MegaETH Testnet** 0x1695ff5ce22b1ff8b696b4203062da16ccb97dc4705c7596e1aeb09599ddf912
-- **Address :** 0xDe59972B741983F825c2F1fE41119bE62c12D879
-- **Chain ID :** 6342
-- **RPC :** https://carrot.megaeth.com/rpc
-- **Explorer :** https://megaexplorer.xyz
+Un mini smart contract de contribution déployé sur **MegaETH Testnet (Chain 6342)**.  
+Permet d’envoyer une petite contribution en ETH (test) avec un message on-chain 💬.
 
-## Test the contract
-1. Connect to MegaETH Testnet in MetaMask
-2. Go to Remix → load `MegaETHContrib.sol`
-3. Call `contribute("your message")` with a small ETH value (0.001)
-4. Check the event on the explorer
+---
+
+## 🧱 Smart Contract
+
+| Détail | Info |
+|--------|------|
+| **Nom** | `MegaETHContrib` |
+| **Réseau** | MegaETH Testnet |
+| **Chain ID** | 6342 |
+| **Adresse du contrat** | `0x1695ff5ce22b1ff8b696b4203062da16ccb97dc4705c7596e1aeb09599ddf912* |
+| **Explorateur** | [MegaExplorer.xyz](https://megaexplorer.xyz) |
+| **RPC** | `https://carrot.megaeth.com/rpc` |
+
+---
+
+## 💡 Fonction principale
+
+```solidity
+function contribute(string calldata message) external payable
